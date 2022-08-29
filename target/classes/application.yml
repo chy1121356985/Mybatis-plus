@@ -1,0 +1,17 @@
+#mysql数据库连接
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+    url: jdbc:mysql://10.6.6.151:3306/chy?serverTimezone=GMT%2B8
+    username: chy
+    password: renderg
+
+#mybatis日志
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      logic-delete-field: 1
+      logic-not-delete-value: 0
